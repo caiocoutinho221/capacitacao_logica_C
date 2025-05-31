@@ -21,15 +21,15 @@ int main() {
     scanf("%d", &alvo);
 
     // Lógica:
-
-
-    
+    for(int i = 0; i < tamanho; i++) {
+        if(numeros[i] == alvo) {
+            encontrado = 1;
+            break;
+        }
+    }
 
     // Mensagem de resultado:
-
-
-
-
+    printf((encontrado) ? "Número presente!\n" : "Número ausente!\n");
     return 0;
 }
 

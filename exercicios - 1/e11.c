@@ -13,3 +13,26 @@
     Tente digitar o código manualmente, sem copiar e colar. Em caso de dúvida, consulte os exemplos 07 e 17.
 */
 
+#include <stdio.h>
+
+int main() {
+    char opcao;
+    scanf("%c", &opcao);
+
+    switch(opcao) {
+        case 'A':
+            printf("Você escolheu Albert Einstein\n");
+            break;
+        case 'N':
+            printf("Você escolheu Marie Curie\n");
+            break;
+        case 'M':
+            printf("Você escolheu Nikola Tesla\n");
+            break;
+        default:
+            printf("Opção inválida!\n");
+            break;
+    }
+
+}
+

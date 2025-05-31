@@ -29,7 +29,8 @@ int main() {
     // Calcula soma dos números do vetor
     soma = 0;
     for (i = 0; i < 5; i++) {
-        soma += v[i];  // Soma cada número do vetor, conforme seu índice i
+        if(v[i] % 2 == 0) soma += v[i];  // Soma cada número do vetor, conforme seu índice i
+        else soma -= v[i];
     }
     printf("A soma dos números é: %d\n", soma);
 

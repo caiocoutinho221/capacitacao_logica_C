@@ -7,14 +7,16 @@
 
 int main() {
     // Crie as variáveis aqui:
-
+    char primeira = 'A';
+    char segunda = 'B';
+    char terceira = 'C';
 
 
 
     // Substitua ??? pelo nomes de cada variável criada para exibi-las
-    printf("1º caracter: %c \n", ??? );
-    printf("2º caracter: %c \n", ??? );
-    printf("3º caracter: %c \n", ??? );
+    printf("1º caracter: %c \n", primeira );
+    printf("2º caracter: %c \n", segunda );
+    printf("3º caracter: %c \n", terceira );
 
     return 0;
 }

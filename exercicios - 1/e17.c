@@ -17,12 +17,17 @@
 int main() {
     // implementação:
 
+    int n;
+    printf("Insira um numero de 1 a 10: ");
+    scanf("%d", &n);
+    if(n < 1 || n > 10)  {
+        printf("Valor invalido\n");
+        return 0;
+    }
+       
 
-
-
-
-
-
+    for(int i = 1; i <= 10; i++) 
+        printf("Tabuada de %d (i = %d): %d\n", n, i, n*i);
 
     return 0;
 }

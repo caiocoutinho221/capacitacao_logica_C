@@ -20,21 +20,20 @@ int main() {
 
     srand(time(NULL));
     secreto = rand() % 50 + 1;
-
     do {
         printf("Palpite um número (de 1-50): ");
         // Complete o scanf
-        scanf( ??? );
+        scanf("%d", &palpite);
         tentativas++;
 
         // Substitua os "???" dos IFs pelas comparações corretas
-        if ( ??? )
+        if (palpite < secreto)
             printf("Muito baixo!\n");
-        else if ( ??? )
+        else if (palpite > secreto)
             printf("Muito alto!\n");
         else
             // Escreva uma mensagem de parabéns que exiba o número de tentativas
-            printf( ??? );
+            printf("Parabéns! Você acertou o número secreto: %d. Tentativas necessárias: %d\n", secreto, tentativas);
 
     } while (palpite != secreto);
 
